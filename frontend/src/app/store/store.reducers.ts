@@ -12,4 +12,8 @@ export const appState = createReducer(
   // loading spinner
   on(Actions.ShowLoadingSpinner, state => ({...state, spinner: true})),
   on(Actions.HideLoadingSpinner, state => ({...state, spinner: false})),
+
+  on(Actions.GetProfile, state => ({...state, spinner: true})),
+  on(Actions.GetProfileSuccess, (state, action) => ({...state,spinner: false, profile: action.profile})),
+  on(Actions.GetProfileFailure, state => ({...state, spinner: false})),
 );
