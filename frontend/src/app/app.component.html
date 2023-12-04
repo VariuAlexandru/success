@@ -1,1 +1,5 @@
-<router-outlet></router-outlet>
+
+<div class="router">
+  <app-nav *ngIf="!isLandingPage()"></app-nav>
+  <router-outlet></router-outlet>
+</div>

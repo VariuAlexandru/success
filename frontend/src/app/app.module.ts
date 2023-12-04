@@ -8,24 +8,30 @@ import { EffectsModule } from '@ngrx/effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import {StoreEffects} from "./store/store.effects";
 import {appState} from "./store/store.reducers";
+import { TodayComponent } from './components/today/today.component';
+import {SharedModule} from "./shared/shared.module";
+import { TaskComponent } from './components/task/task.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingComponent
+    LandingComponent,
+    TodayComponent,
+    TaskComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    EffectsModule.forRoot([StoreEffects]),
-    StoreModule.forRoot({appState}),
-    StoreDevtoolsModule.instrument({
-      maxAge: 25,
-      logOnly: !isDevMode(),
-      autoPause: true,
-      connectOutsideZone: true
-    })
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        EffectsModule.forRoot([StoreEffects]),
+        StoreModule.forRoot({appState}),
+        StoreDevtoolsModule.instrument({
+            maxAge: 25,
+            logOnly: !isDevMode(),
+            autoPause: true,
+            connectOutsideZone: true
+        }),
+        SharedModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

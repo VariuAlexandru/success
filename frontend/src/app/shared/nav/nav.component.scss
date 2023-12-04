@@ -1,0 +1,19 @@
+@import "../../colors";
+.container {
+  height: 60px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: bold;
+  color: $grey;
+
+
+  .menu {
+    font-size: 32px;
+  }
+}

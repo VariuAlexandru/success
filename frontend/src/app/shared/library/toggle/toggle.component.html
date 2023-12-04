@@ -1,0 +1,7 @@
+<div class="toggle-container" (click)="onToggle()">
+  <span class="label">Status</span>
+  <div class="toggle-body" [ngClass]="{'on-toggle-body': isToggled}">
+    <div class="toggle-circle" [ngClass]="{'on-toggle-circle': isToggled, 'on-toggle-circle-back': !isToggled}"></div>
+  </div>
+
+</div>

@@ -1,10 +1,11 @@
-<div class="landing-container">
 
+<div *ngIf="!tasks.length" class="new-day">
   <span class="title">{{title}}</span>
   <div class="quote">
     <p>{{quote.desc}}</p>
     <span class="author">{{quote.author}}</span>
   </div>
+
+  <button routerLink="/task">Add your first task</button>
   <img class="logo" src="assets/mountains/green-mountain.svg">
-  <button routerLink="today">Start your day</button>
 </div>

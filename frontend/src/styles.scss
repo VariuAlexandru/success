@@ -1,15 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+@import "app/colors";
 body, html {
   padding: 0;
   margin: 0;
   height: calc(100% - 20px); // todo adjust height for mobile app
   width: 100%;
   font-family: Inter, sans-serif;
+ user-select: none;
+
+}
+.title{
+  color: $blue-regular;
+  font-size: 28px;
+  margin: 30px 0;
+}
+
+.title-small{
+  color: $blue-regular;
+  font-size: 22px;
+  margin: 20px 0;
+}
+
+.quote{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  color: $grey;
+  font-style: italic;
+
+  .author {
+    text-align: end;
+    width: 95%;
+  }
 }
 
 button {
   font-family: Inter, sans-serif;
-
 }
-
-$blue: #0983C8;

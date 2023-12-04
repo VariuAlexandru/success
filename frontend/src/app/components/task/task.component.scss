@@ -1,0 +1,64 @@
+@import "../../colors";
+
+.task-container {
+  height: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: relative;
+
+  .input{
+    margin-top: 40px;
+  }
+
+  .status {
+    margin-top: 20px;
+    button {
+      border: none;
+      background-color: white;
+      font-size: 14px;
+    }
+  }
+
+  .status, .toggle {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+  .footer {
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    button {
+      background-color: white;
+      border: none;
+      padding: 8px 16px;
+      width: 80px;
+      font-size: 16px;
+      border-radius: 8px;
+    }
+
+    .delete {
+      outline: 1px solid $grey-light;
+      color: $grey-light;
+    }
+
+    .cancel {
+      outline: 1px solid $blue-regular;
+      color: $blue-regular;
+    }
+
+    .save {
+      outline: 1px solid $blue-regular;
+      background-color: $blue-regular;
+      color: $white;
+    }
+  }
+}

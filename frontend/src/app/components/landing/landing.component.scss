@@ -1,12 +1,9 @@
 @import "../../colors";
 
 .landing-container{
-
   background: #373B44;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #CDEDFF, rgba(217, 217, 217, 0));  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #CDEDFF, rgba(217, 217, 217, 0)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
   height: 100%;
   width: 100%;
   display: flex;
@@ -14,25 +11,7 @@
   justify-content: space-evenly;
   flex-direction: column;
 
-  .title{
-    color: $blue-regular;
-    font-size: 26px;
-    font-weight: bold;
-    margin: 30px 0;
-  }
 
-  .quote{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    color: $grey-light;
-    font-style: italic;
-
-    .author {
-      text-align: end;
-
-    }
-  }
 
   button {
     width: 90%;
@@ -41,7 +20,7 @@
     background-color: $blue-regular;
     color: $white;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     font-size: 16px;
   }
 
