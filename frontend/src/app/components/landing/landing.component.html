@@ -1,8 +1,10 @@
 <div class="landing-container">
 
-
-  <p *ngIf="counter != 1" class="counter">{{counter + " %"}}</p>
-  <span *ngIf="counter === 1" class="counter">Welcome to 1%</span>
-  <h4 *ngIf="counter === 1" class="counter">Success Club</h4>
-
+  <span class="title">{{title}}</span>
+  <div class="quote">
+    <span>{{quote.desc}}</span>
+    <span class="author">{{quote.author}}</span>
+  </div>
+  <img class="logo" src="assets/mountains/green-mountain.svg">
+  <button>Start your day</button>
 </div>

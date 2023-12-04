@@ -6,22 +6,17 @@ import {Observable} from "rxjs";
   templateUrl: './landing.component.html',
   styleUrls: ['./landing.component.scss']
 })
-export class LandingComponent implements OnInit {
+export class LandingComponent  {
 
-  public counter = 99;
+  public title = 'Move Mountains'
 
-  public ngOnInit(){
-    this.startCounting()
+  public quote =  {
+    desc :"'' If you think you can or if you think you can't, either way your right. ''",
+    author: 'Henry Ford'
   }
 
-  public startCounting(){
-    console.log(this.counter)
-    if(this.counter > 1) {
 
-      this.counter = this.counter -1
-      setTimeout(() => this.startCounting(), 20);
-    }
 
-  }
+
 
 }
